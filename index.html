@@ -1,18 +1,150 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Land Page</title>
+    <!-- link icones bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Pixelify+Sans&family=Tilt+Warp&display=swap"
+        rel="stylesheet">
+    <!-- css da pagina -->
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Portfólio Geovanna Alves</title>
 </head>
+
 <body>
+    <!-- cabeçalho -->
     <header>
-        <div>
-            <img src="#" alt="logo">
-        </div>
+        <!-- logo -->
+        <figure>
+            <img src="/imagens/logo.png" alt="logo escrito galves" id="logo">
+        </figure>
+        <!-- navegadores -->
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidade</a></li>
+                <li><a href="#destaque">Destaque</a></li>
+            </ul>
+            <!-- icone de menu para tela menores do que desktop -->
+            <button id="menu_icone-celulares">
+                <i class="bi bi-list"></i>
+            </button>
+        </nav>
     </header>
+    <!-- corpo principal -->
     <main>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem dignissimos nulla eos placeat sit temporibus commodi quos voluptates beatae veniam voluptas, sint consequatur ab. Sed velit cumque sit dolore expedita?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste eligendi consectetur, nisi blanditiis et libero illo delectus eaque iure commodi dolore, ea distinctio quidem optio hic assumenda. Hic, expedita modi?</p>
+        <!-- sessão sobre mim -->
+        <section id="sobre">
+            <h2 class="titulo">&lt; Quem sou eu? /&gt;</h2>
+            <!-- sessão "sobre mim" parte do texto -->
+            <p class="texto">
+                Desde que comecei o curso técnico de Informática no SENAC Minas, descobri minha paixão pela
+                tecnologia. Ao longo da formação, explorei diferentes áreas, como manutenção de computadores, redes
+                e programação. Tive a oportunidade de estagiar na área de suporte à infraestrutura e software, o que
+                ampliou ainda mais minha visão prática do setor.
+
+                Em 2025, representei com orgulho minha cidade, Contagem – MG, na competição estadual do SENAC Minas,
+                o que foi uma das experiências mais marcantes da minha trajetória até aqui.
+            </p>
+            <!-- sessão "sobre mim" parte da imagem -->
+            <figure>
+                <img src="/imagens/foto-competicao.jpg"
+                    alt="Imagem de uma moça sentada digitando em um notebook com dois monitores"
+                    title="Competição Estadual Senac Minas 2025" loading="eager" class="imagem">
+                <figcaption>Competição Estadual Senac Minas 2025</figcaption>
+            </figure>
+        </section>
+        <!-- sessão "habilidades" -->
+        <section id="habilidades">
+            <h2 class="titulo">&lt; Habilidades /&gt;</h2>
+            <ul class="habilidades_icones-parte">
+                <!-- ícone html -->
+                <li>
+                    <img src="/imagens/icones/html.png" alt="ícone do html" class="habilidades_icones-img"
+                        class="habilidades_icones-img">
+                    <h3 class="subtitulo">HTML</h3>
+                </li>
+                <!-- ícone css -->
+                <li>
+                    <img src="/imagens/icones/css.png" alt="ícone do css" class="habilidades_icones-img">
+                    <h3 class="subtitulo">CSS</h3>
+                </li>
+                <!-- ícone js -->
+                <li>
+                    <img src="/imagens/icones/js.png" alt="ícone do javaScript" class="habilidades_icones-img">
+                    <h3 class="subtitulo">javaScript</h3>
+                </li>
+                <li>
+                    <img src="/imagens/icones/bootstrap.png" alt="ícone do bootstrap" class="habilidades_icones-img">
+                    <h3 class="subtitulo">Bootstrap</h3>
+                </li>
+                <!-- ícone do figma -->
+                <li>
+                    <img src="/imagens/icones/figma.png" alt="ícone do figma" class="habilidades_icones-img">
+                    <h3 class="subtitulo">Figma</h3>
+                </li>
+                <!-- ícone do github -->
+                <li>
+                    <img src="/imagens/icones/github.png" alt="ícone do github" class="habilidades_icones-img">
+                    <h3 class="subtitulo">GitHub</h3>
+                </li>
+            </ul>
+        </section>
+        <!-- sessão "destaque" -->
+        <section id="destaque">
+            <h2 class="titulo">&lt; Destaque /&gt;</h2>
+            <!-- sessão "destaque" parte da imagem -->
+            <figure>
+                <img src="/imagens/foto-competidora-medalha.jpg"
+                    alt="Imagem de uma moça com um buquê de flores e uma medalha de prata nas mãos"
+                    title="Competição Estadual Senac Minas 2025 - Medalha de prata para competidora Geovanna Alves"
+                    loading="eager" class="imagem">
+            </figure>
+            <!-- sessão "destaque" parte do texto -->
+            <div class="destaque_parte-texto">
+                <h3 class="subtitulo">Competição Senac Minas</h3>
+                <!-- texto "sobre a competição" -->
+                <p class="texto">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias voluptate quis cum fuga dolores
+                    soluta blanditiis possimus deleniti corporis ab consequatur accusantium, dolorem veniam excepturi
+                    fugit doloremque magnam perspiciatis reprehenderit. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Ipsa iure, neque provident optio corporis similique aliquam vero repudiandae. Illo
+                    ducimus, impedit voluptatibus rerum eius quod aliquid doloremque quia obcaecati voluptatum! Lorem
+                    ipsum dolor sit, amet consectetur adipisicing elit. Assumenda iure ex odio iste illum quibusdam
+                    corporis optio fugit sint, fuga ipsa consectetur, velit illo laborum? Ea architecto voluptatibus
+                    voluptates earum!
+                </p>
+            </div>
+        </section>
     </main>
+    <!-- rodapé -->
+    <footer>
+        <!-- ícones linkavel das redes social -->
+        <nav>
+            <ul>
+                <!-- rede whatsapp -->
+                <li><a href="#" class="link-redes">
+                        <i class="bi bi-whatsapp"></i>
+                    </a></li>
+                <!-- rede git hub -->
+                <li><a href="#" class="link-redes">
+                        <i class="bi bi-github"></i>
+                    </a></li>
+                <!-- rede linkdln -->
+                <li><a href="#" class="link-redes">
+                        <i class="bi bi-linkedin"></i>
+                    </a></li>
+            </ul>
+        </nav>
+        <!-- texto todos os direitos reservados -->
+        <h4 class="subtitulo">&reg; Galves. Todos os direitos reservados. </h4>
+    </footer>
 </body>
+
 </html>
