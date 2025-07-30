@@ -1,0 +1,134 @@
+:root {
+  /* cores */
+  --cor-preto: #1a1a1a;
+  --cor-roxo: #6c63ff;
+  --cor-branco: #fafafa;
+}
+/* tipografia */
+.titulo {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0 0 2rem 0;
+  font-size: 2rem;
+}
+.subtitulo {
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+.texto {
+  font-family: "Cardo", serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+}
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* estilo globais */
+body {
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
+}
+ul {
+  list-style: none;
+}
+/* cabeçalho */
+header {
+  background-color: var(--cor-roxo);
+  color: var(--cor-branco);
+  padding: 0 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  width: 100%;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: var(--cor-branco);
+  font: var(--texto);
+  font-size: 2rem;
+  transition: border-bottom 0.3s ease;
+}
+header nav ul li a:hover {
+  font-weight: bold;
+  border-bottom: 3px solid var(--cor-branco);
+}
+#menu_icone-celulares {
+  display: none;
+}
+/* corpo da pagina */
+main {
+  padding: 0 5%;
+}
+/* sesôes gerais */
+#sobre,
+#habilidades,
+#destaque {
+  height: 100%;
+  padding: 3rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+/* imagem*/
+figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+figure img {
+  width: 25%;
+  border-radius: 10px;
+}
+
+/* rodape */
+footer {
+  background-color: var(--cor-preto);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+footer nav ul {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+footer nav ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--cor-branco);
+  transition: font-size 0.3s ease;
+}
+footer nav ul li a:hover {
+  font-size: 2rem;
+}
+footer h4 {
+  background-color: var(--cor-branco);
+  color: var(--cor-preto);
+  text-align: center;
+}
